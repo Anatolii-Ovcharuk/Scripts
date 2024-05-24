@@ -1,0 +1,111 @@
+REM Injection: Restore system for Windows (Auto). Made by Anatolii Ovcharuk. Version for Windows 1.0 - 23.05.2024 | MIT License
+REM Profile on Github: https://github.com/Anatolii-Ovcharuk
+REM This is BadUSB demo script for windows. Approximate completion time: 30 minutes.
+
+
+
+REM Open windows notepad
+DELAY 1000
+GUI r
+DELAY 500
+STRING notepad
+DELAY 500
+ENTER
+DELAY 750
+WINDOWS UP
+DEFAULT_DELAY 50
+ENTER
+
+REM Info in windows notepad
+STRING Initializating...
+ENTER
+STRING Injection: Restore system for Windows (Auto). Made by Anatolii Ovcharuk. Version 1.0 - 23.05.2024
+ENTER
+STRING Approximate completion time: 30 minutes.
+ENTER
+STRING Press any key for continue.
+ENTER
+WAIT_FOR_BUTTON_PRESS
+ENTER
+STRING Starting process...
+ENTER
+
+REM Close windows notepad
+ALT F4
+RIGHT
+ENTER
+
+REM Operation in windows powershell
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+WINDOWS UP
+DEFAULT_DELAY 100
+STRING DISM.exe /Online /Cleanup-image /Restorehealth
+ENTER
+REM Set: 900000 - 15 minutes; 600000 - 10 minutes; 300000 - 5 minutes;
+DELAY 600000
+STRING SFC.exe /SCANNOW
+ENTER
+REM Set: 900000 - 15 minutes; 600000 - 10 minutes; 300000 - 5 minutes;
+DELAY 600000
+ENTER
+STRING Verifier
+ENTER
+TAB
+TAB
+DOWN
+DOWN
+DOWN
+DOWN
+ENTER
+ENTER
+ENTER
+ENTER
+DELAY 1000
+ENTER
+STRING Mdsched
+ENTER
+DOWN
+ENTER
+DELAY 1000
+ENTER
+STRING exit
+ENTER
+
+REM Open windows notepad
+DELAY 1000
+GUI r
+DELAY 500
+STRING notepad
+DELAY 500
+ENTER
+DELAY 750
+WINDOWS UP
+DEFAULT_DELAY 50
+ENTER
+
+REM Info in windows notepad
+STRING Restore system Complete.
+ENTER
+STRING Press any key for close and exit, restart.
+ENTER
+WAIT_FOR_BUTTON_PRESS
+ENTER
+STRING Closing and exit...
+ENTER
+
+REM Close windows notepad
+ALT F4
+RIGHT
+ENTER
+
+REM Restart Windows
+WINDOWS
+RIGHT
+RIGHT
+UP
+ENTER
