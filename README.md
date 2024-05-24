@@ -1,4 +1,6 @@
 Prefix before name files:
-/n "" - Version with accept on each steps running command.
-/n "auto" - Version for automatic running command.
-/n "universal" - Version with unicode language for any keyboard layout.
+<ul>
+  <li>"" - Version with accept on each steps running command.</li>
+  <li>"auto" - Version for automatic running command.</li>
+  <li>"universal" - Version with unicode language for any keyboard layout.</li>
+</ul>
