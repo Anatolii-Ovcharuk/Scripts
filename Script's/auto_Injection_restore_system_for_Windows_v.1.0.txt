@@ -1,6 +1,6 @@
-REM Injection: Restore system for Windows (Auto). Made by Anatolii Ovcharuk. Version for Windows 1.0 - 23.05.2024 | MIT License
+REM Injection: Restore system for Windows (Auto). Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 23.05.2024 | MIT License
 REM Profile on Github: https://github.com/Anatolii-Ovcharuk
-REM This is BadUSB demo script for windows. Approximate completion time: 30 minutes.
+REM This is BadUSB demo script for Windows. Approximate completion time: 30 minutes. With restart system.
 
 
 
@@ -21,7 +21,7 @@ STRING Initializating...
 ENTER
 STRING Injection: Restore system for Windows (Auto). Made by Anatolii Ovcharuk. Version 1.0 - 23.05.2024
 ENTER
-STRING Approximate completion time: 30 minutes.
+STRING Approximate completion time: 30 minutes. With restart system.
 ENTER
 STRING Press any key for continue.
 ENTER
@@ -104,8 +104,13 @@ RIGHT
 ENTER
 
 REM Restart Windows
-WINDOWS
-RIGHT
-RIGHT
-UP
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+WINDOWS UP
+DEFAULT_DELAY 100
+STRING shutdown -r -t 60
 ENTER

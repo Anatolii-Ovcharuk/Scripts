@@ -1,6 +1,6 @@
-REM Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version for Windows 1.0 - 23.05.2024 | MIT License
+REM Update operation system Windows server 2016 - 2019 (auto). Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 25.05.2024 | MIT License
 REM Profile on Github: https://github.com/Anatolii-Ovcharuk
-REM This is BadUSB demo script for windows. Approximate completion time: 30 minutes.
+REM This is BadUSB demo script for Windows. Approximate completion time: 15 minutes. With restart system.
 REM Notice for future: This script non-automated and have several steps. After complete each step, Press button for continue next step.
 
 
@@ -20,11 +20,15 @@ ENTER
 REM Info in windows notepad
 STRING Initializating...
 ENTER
-STRING Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version 1.0 - 23.05.2024
+STRING Update operation system Windows server 2016 - 2019 (auto).
+ENTER
+STRING Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 25.05.2024 | MIT License
 ENTER
 STRING Notice for future: This script non-automated and have several steps. After complete each step, Press button for continue next step.
 ENTER
-STRING Approximate completion time: 30 minutes.
+STRING Approximate completion time: 15 minutes. With restart system.
+ENTER
+STRING Update including: Add monitoring disk in manager; Add WLAN services. 
 ENTER
 STRING Press any key for continue.
 ENTER
@@ -47,31 +51,31 @@ ENTER
 DELAY 1000
 WINDOWS UP
 DEFAULT_DELAY 100
-STRING DISM.exe /Online /Cleanup-image /Restorehealth
 ENTER
-WAIT_FOR_BUTTON_PRESS
+STRING diskperf -y
 ENTER
-STRING SFC.exe /SCANNOW
+STRING Get-WindowsFeature *Wireless*
 ENTER
-WAIT_FOR_BUTTON_PRESS
-ENTER
-STRING Verifier
-ENTER
-TAB
-TAB
-DOWN
-DOWN
-DOWN
-DOWN
-ENTER
-ENTER
-ENTER
+STRING Install-WindowsFeature -Name Wireless-Networking
 ENTER
 DELAY 1000
 ENTER
-STRING Mdsched
+STRING shutdown –r –t 60
 ENTER
-DOWN
+
+REM Set: 900000 - 15 minutes; 600000 - 10 minutes; 300000 - 5 minutes;
+DELAY 450000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+WINDOWS UP
+DEFAULT_DELAY 100
+ENTER
+STRING Set-Service WlanSvc –startuptype automatic –passthru
+ENTER
+STRING Start-Service WlanSvc –PassThru 
 ENTER
 DELAY 1000
 ENTER
@@ -91,9 +95,9 @@ DEFAULT_DELAY 50
 ENTER
 
 REM Info in windows notepad
-STRING Restore system Complete.
+STRING Update system Complete.
 ENTER
-STRING Press any key for close and exit, restart.
+STRING Press any key for close and exit.
 ENTER
 WAIT_FOR_BUTTON_PRESS
 ENTER
@@ -103,11 +107,4 @@ ENTER
 REM Close windows notepad
 ALT F4
 RIGHT
-ENTER
-
-REM Restart Windows
-WINDOWS
-RIGHT
-RIGHT
-UP
 ENTER
