@@ -1,4 +1,4 @@
-REM Update operation system Windows server 2016 - 2019. Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 25.05.2024 | MIT License
+REM Upgrade operation system Windows server 2016 - 2019. Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 25.05.2024 | MIT License
 REM Profile on Github: https://github.com/Anatolii-Ovcharuk
 REM This is BadUSB demo script for Windows. Approximate completion time: 15 minutes. With restart system.
 REM Notice for future: This script non-automated and have several steps. After complete each step, Press button for continue next step.
@@ -20,7 +20,7 @@ ENTER
 REM Info in windows notepad
 STRING Initializating...
 ENTER
-STRING Update operation system Windows server 2016 - 2019.
+STRING Upgrade operation system Windows server 2016 - 2019.
 ENTER
 STRING Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 25.05.2024 | MIT License
 ENTER
@@ -28,7 +28,7 @@ STRING Notice for future: This script non-automated and have several steps. Afte
 ENTER
 STRING Approximate completion time: 15 minutes. With restart system.
 ENTER
-STRING Update including: Add monitoring disk in manager; Add WLAN services. 
+STRING Upgrade including: Add monitoring disk in manager; Add WLAN services. 
 ENTER
 STRING Press any key for continue.
 ENTER
@@ -96,7 +96,7 @@ DEFAULT_DELAY 50
 ENTER
 
 REM Info in windows notepad
-STRING Update system Complete.
+STRING Upgrade system Complete.
 ENTER
 STRING Press any key for close and exit.
 ENTER
