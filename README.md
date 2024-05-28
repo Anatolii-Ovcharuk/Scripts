@@ -1,3 +1,4 @@
+That's files use DuckyScript.
 Prefix before name files:
 <ul>
   <li>"" - Version with accept on each steps running command.</li>
