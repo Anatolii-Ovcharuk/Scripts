@@ -15,7 +15,7 @@ echo Press any key to continue.
 pause
 echo Starting process...
 
-REM Операции в Windows CMD
+REM Операции в Windows CMD / Operation in Windows CMD
 echo 'Running DISM command...'
 DISM.exe /Online /Cleanup-image /Restorehealth
 echo 'Press any key to continue...'
