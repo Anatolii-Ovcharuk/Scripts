@@ -14,7 +14,7 @@ timeout /t 1 >nul
 
 REM Информация в консоли / Information in console
 
-REM Операции в Windows CMD / Operation in Windows CMD
+REM Операции в Windows Powershell Console / Operation in Windows Powershell Console
 REM Запуск DISM / Running DISM command
 powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('DISM.exe /Online /Cleanup-image /Restorehealth{ENTER}')"
 REM Запуск SFC command / Running SFC command

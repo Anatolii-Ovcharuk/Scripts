@@ -17,7 +17,7 @@ echo Starting process...
 
 REM Операции в Windows CMD / Operation in Windows CMD
 
-REM Запуск DISM / Running DISM command
+REM Запуск DISM command / Running DISM command
 echo Running DISM command...
 DISM.exe /Online /Cleanup-image /Restorehealth
 
