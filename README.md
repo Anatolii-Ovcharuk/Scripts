@@ -1,4 +1,4 @@
-<h2>Folder "BAT-Script's" - That's files in type .bat</h2>
+<h2>Folder "BAT-Script's" and "PowerShell-script's" - That's files in type .bat</h2>
 <p>Prefix after name files:</p>
 <ul>
   <li>"" - Version with accept on each steps running command.</li>
