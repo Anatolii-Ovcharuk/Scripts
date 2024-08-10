@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Add Gadgets for Windows. Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 10.08.2024 / MIT License
+; Profile on Github: https://github.com/Anatolii-Ovcharuk
+; This is a REG file script for Windows. Approximate completion time: 1 minutes.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\Sidebar\Settings] 
+"AllowElevatedProcess"=dword:00000001
+

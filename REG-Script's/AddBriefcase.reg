@@ -1,0 +1,69 @@
+Windows Registry Editor Version 5.00
+
+; Add Briefcase for Windows. Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 10.08.2024 / MIT License
+; Profile on Github: https://github.com/Anatolii-Ovcharuk
+; This is a REG file script for Windows. Approximate completion time: 1 minutes.
+
+[HKEY_CLASSES_ROOT\Briefcase]
+@="Портфель"
+"InfoTip"="Contains files and folders that are synchronized between this computer and another."
+
+[HKEY_CLASSES_ROOT\Briefcase\CLSID]
+@="{85BBD920-42A0-1069-A2E4-08002B30309D}"
+
+[HKEY_CLASSES_ROOT\Briefcase\DefaultIcon]
+@="%SystemRoot%\\\\System32\\\\syncui.dll,0"
+
+[HKEY_CLASSES_ROOT\Briefcase\shell]
+@="update"
+
+[HKEY_CLASSES_ROOT\Briefcase\shell\open]
+[HKEY_CLASSES_ROOT\Briefcase\shell\open\command]
+@="explorer.exe %1"
+
+[HKEY_CLASSES_ROOT\Briefcase\shell\update]
+@="Update All"
+
+[HKEY_CLASSES_ROOT\Briefcase\shell\update\command]
+@="syncui.dll,Briefcase_UpdateAll"
+
+[HKEY_CLASSES_ROOT\Folder\shellex\DragDropHandlers\Briefcase]
+@="{85BBD920-42A0-1069-A2E4-08002B30309D}"
+
+
+
+
+
+
+
+; Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Briefcase]
+@="Briefcase"
+"FriendlyTypeName"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,\
+  00,6f,00,6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,\
+  32,00,5c,00,73,00,68,00,65,00,6c,00,6c,00,33,00,32,00,2e,00,64,00,6c,00,6c,\
+  00,2c,00,2d,00,32,00,32,00,39,00,37,00,38,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Briefcase\CLSID]
+@="{85BBD920-42A0-1069-A2E4-08002B30309D}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Briefcase\DefaultIcon]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,00,79,00,\
+  6e,00,63,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,2c,00,30,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Briefcase\ShellNew]
+"IconPath"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,\
+  00,79,00,6e,00,63,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,2c,00,30,00,00,00
+"ItemName"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,\
+  6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,\
+  00,73,00,68,00,65,00,6c,00,6c,00,33,00,32,00,2e,00,64,00,6c,00,6c,00,2c,00,\
+  2d,00,36,00,34,00,39,00,33,00,00,00
+"Directory"=""
+"Handler"="{85BBD920-42A0-1069-A2E4-08002B30309D}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Briefcase\ShellNew\Config]
+"IsFolder"=""
+"NoExtension"=""
