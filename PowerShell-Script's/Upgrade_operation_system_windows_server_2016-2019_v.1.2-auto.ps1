@@ -41,11 +41,13 @@ If ( -Not ( Test-Path "Registry::HKEY_CLASSES_ROOT\Applications\photoviewer.dll\
 Set-ItemProperty -path "Registry::HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\command" -Name "(Default)" -Type "ExpandString" -Value "%SystemRoot%\System32\rundll32.exe `"%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll`", ImageView_Fullscreen %1"
 If ( -Not ( Test-Path "Registry::HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget")) { New-Item -Path "Registry::HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget" -ItemType RegistryKey -Force }
 Set-ItemProperty -path "Registry::HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget" -Name "Clsid" -Type "String" -Value "{60fd46de-f830-4894-a628-6fa81bc0190d}"
+Write-Host "Windows Photo Viewer has been added." -ForegroundColor Green
 
 # Operation in Windows Powershell - Add monitoring disk in manager;
 Write-Host "Waiting for $delayInSeconds seconds before running - Add monitoring disk in manager..." -ForegroundColor Red 
 Start-Sleep -Seconds $delayInSeconds
 diskperf -y
+Write-Host "Monitoring disk in manager has been added." -ForegroundColor Green
 
 # Operation in Windows Powershell - Add WLAN services;
 Write-Host "Waiting for $delayInSeconds seconds before running - Add WLAN services..." -ForegroundColor Red 
@@ -54,6 +56,7 @@ Get-WindowsFeature *Wireless*
 Install-WindowsFeature -Name Wireless-Networking
 Set-Service WlanSvc –startuptype automatic –passthru
 Start-Service WlanSvc –PassThru 
+Write-Host "WLAN services has been added." -ForegroundColor Green
 
 # Operation in Windows Powershell - Add Briefcase;
 Write-Host "Waiting for $delayInSeconds seconds before running - Adding Briefcase to the registry..." -ForegroundColor Red 
@@ -105,6 +108,8 @@ exit
 
 # =========== =========== ===========  Ending script =========== =========== =========== 
 # Thank's for using my script's... With respect's, Anatolii Ovcharuk.
+
+
 
 
 
