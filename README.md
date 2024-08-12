@@ -8,7 +8,7 @@
   <li>"install" - Version with choice options.</li>
 </ul>
 
-<h2>Folder "BadUSB-Script's" - That's files use DuckyScript in type: ".txt".</h2>
+<h2>Folder "BadUSB-Script's" - That's files use DuckyScript in type: ".txt"</h2>
 <p>Prefix before name files:</p>
 <ul>
   <li>"" - Version with accept on each steps running command.</li>
