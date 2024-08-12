@@ -17,8 +17,8 @@
 </ul>
 
 <h2>Folder "REG-Script's" - That's files in type: .reg</h2>
-<p>That's files using Windows Registry Editor</p>
+<p>That's files using Windows Registry Editor.</p>
 
 <h2>Folder "INF-Script's" - That's files in type: .inf</h2>
-<p>That's files set configurations</p>
+<p>That's files set configurations.</p>
 
