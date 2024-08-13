@@ -52,8 +52,10 @@ echo 'Press any key to continue...'
 pause
 Get-WindowsFeature *Wireless*
 Install-WindowsFeature -Name Wireless-Networking
-Set-Service WlanSvc –startuptype automatic –passthru
-Start-Service WlanSvc –PassThru 
+REM Set-Service WlanSvc –startuptype automatic –passthru
+Set-Service -Name WlanSvc -StartupType Automatic -PassThru
+REM Start-Service WlanSvc –PassThru 
+Start-Service -Name WlanSvc -PassThru
 echo WLAN services has been added.
 
 REM Operation in Windows Powershell - Add Briefcase;
@@ -86,4 +88,7 @@ shutdown -r -t 60
 echo Exit...
 timeout /t 3
 exit
+
+
+
 

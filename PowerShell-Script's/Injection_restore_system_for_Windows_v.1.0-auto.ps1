@@ -46,7 +46,8 @@ Write-Host "Для продолжения работы необходимо бу
 mdsched.exe
 
 $wshell = New-Object -ComObject wscript.shell
-$wshell.AppActivate('mdsched.exe')
+# $wshell.AppActivate('mdsched.exe')
+$wshell.AppActivate('Windows Memory Diagnostic')
 Start-Sleep -Seconds 2
 $wshell.SendKeys("{DOWN}")
 Start-Sleep -Seconds 2
@@ -140,5 +141,4 @@ exit
 # Write-Host "Exit..."
 # Start-Sleep -Seconds 10
 # exit
-
 
