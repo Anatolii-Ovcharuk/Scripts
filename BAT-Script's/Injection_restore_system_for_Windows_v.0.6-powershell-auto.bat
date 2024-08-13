@@ -1,5 +1,5 @@
 @echo off
-REM Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version 0.5 for Windows - Update 08.08.2024 / MIT License
+REM Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version 0.6 for Windows - Update 08.08.2024 / MIT License
 REM Profile on Github: https://github.com/Anatolii-Ovcharuk
 REM This is .bat file script for Windows, using Powershell Console. Approximate completion time: 30 minutes. With restart system.
 REM Notice for future: This script automated.
