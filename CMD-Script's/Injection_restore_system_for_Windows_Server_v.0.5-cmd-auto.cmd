@@ -1,7 +1,7 @@
 @echo off
 REM Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version 0.5 for Windows - Update 08.08.2024 / MIT License
 REM Profile on Github: https://github.com/Anatolii-Ovcharuk
-REM This is .bat file script for Windows, using CMD Console. Approximate completion time: 30 minutes. With restart system.
+REM This is .bat file script for Windows, using CMD Console. Approximate completion time: 30 minutes.
 REM Notice for future: This script automated. This is version for server.
 
 echo Initializating...
@@ -9,7 +9,7 @@ echo Initializating...
 REM Информация в консоли / Information in console
 echo Injection: Restore system for Windows. Made by Anatolii Ovcharuk. Version 0.5 for Windows - Update 08.08.2024 / MIT License
 echo Profile on Github: https://github.com/Anatolii-Ovcharuk
-echo This is .bat file script for Windows, using CMD Console. Approximate completion time: 30 minutes. 
+echo This is .cmd file script for Windows, using CMD Console. Approximate completion time: 30 minutes. 
 echo Notice for future: This script automated. This is version for server.
 
 REM Операции в Windows CMD / Operation in Windows CMD
