@@ -22,3 +22,8 @@
 <h2>Folder "INF-Script's" - That's files in type: ".inf"</h2>
 <p>That's files set configurations.</p>
 
+<h2>Folder "Javascript Applications" - That's Javascript files in type: ".js"</h2>
+<p>That's Javascript files using and runing in Visual Studo Code or Terminal.</p>
+
+
+
