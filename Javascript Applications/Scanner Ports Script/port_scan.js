@@ -1,3 +1,9 @@
+/* "Port Scanner", v. 1.0 - 19.09.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+
+    /* INSTALLATION */
+/* Install: `npm install async`. Then open terminal in folder project, write "node port_scan.js" and press "ENTER". */
+
+
 const net = require('net');
 const dgram = require('dgram');
 const async = require('async'); // Установите с помощью `npm install async`
@@ -68,12 +74,12 @@ const scanPorts = (host, startPort, endPort, protocol, concurrency, callback) =>
 };
 
 // Основной блок для сканирования обоих протоколов
-const host = '213.168.190.160'; // Замените на целевой хост
-const startPort = 0;
-const endPort = 65535; /* Максимальное количество портов в TCP/IP и UDP протоколе — 65535 */
+const host = '213.168.190.160'; // Замените на целевой хост (Setting: IP Address)
+const startPort = 0; // Setting: Number of starting scan port
+const endPort = 65535; /* Максимальное количество портов в TCP/IP и UDP протоколе — 65535 (Setting: Number of ending scan port) */
 const concurrency = 100; // Количество параллельных подключений
 
-const protocols = ['tcp', 'udp']; // Добавьте необходимые протоколы
+const protocols = ['tcp', 'udp']; // Добавьте необходимые протоколы (Setting: Protocols)
 
 protocols.forEach(protocol => {
     scanPorts(host, startPort, endPort, protocol, concurrency, (openPorts) => {
