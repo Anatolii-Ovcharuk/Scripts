@@ -2,6 +2,7 @@
 
     /* INSTALLATION */
 /* Install: `npm install async`. Then open terminal in folder project, write "node port_scan.js" and press "ENTER". */
+/* Or initializate project: npm init -y */
 
 
 const net = require('net');
