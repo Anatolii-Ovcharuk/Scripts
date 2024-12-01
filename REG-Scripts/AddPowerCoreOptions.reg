@@ -1,0 +1,44 @@
+Windows Registry Editor Version 5.00
+
+; Add Power Core Options for Windows. Made by Anatolii Ovcharuk. Version 0.2 for Windows - Update 22.11.2024 / MIT License
+; Profile on Github: https://github.com/Anatolii-Ovcharuk
+; This is a REG file script for Windows. Approximate completion time: 1 minutes.
+
+; Set Attributes - 2 / Add Options - Processor Turbo boost on/off...
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\be337238-0d82-4146-a960-4f3749d470c7]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Maximum processor frequency...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\75b0ae3f-bce0-45a7-8c89-c9611c25e100]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Processor frequency...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\75b0ae3f-bce0-45a7-8c89-c9611c25e101]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Maximum processor core...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\bc5038f7-23e0-4960-96da-33abaf5935ec]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Minimum processor core...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Priority power usage for processor...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\465e1f50-b610-473a-ab58-00d1077dc418]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Step for disabled cores...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\9ed9228b-40a6-4b30-91bc-89a3ff8b0d02]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Step for enabled cores...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\bc5038f7-23e0-4960-96da-33abaf5935ec]
+"Attributes"=dword:00000002
+
+; Set Attributes - 2 / Add Options - Frequency of change power on processor...
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\d8edeb9b-95cf-4f95-a73c-b061973693c8]
+"Attributes"=dword:00000002
+
+
+
