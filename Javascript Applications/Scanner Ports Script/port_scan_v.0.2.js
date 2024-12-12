@@ -1,4 +1,4 @@
-/* "Port Scanner", v. 1.0 - 19.09.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* "Port Scanner", v. 0.2 - 19.09.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
 
     /* INSTALLATION */
 /* Install: `npm install async`. Then open terminal in folder project, write "node port_scan.js" and press "ENTER". */
