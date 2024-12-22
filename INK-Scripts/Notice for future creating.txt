@@ -1,0 +1,12 @@
+¬вод при создании €рлыка / For creating .ink (example / пример):
+    shutdown.exe -r -t 00 Ч ƒл€ перезапуска ќ—; / Restart OS.
+    shutdown.exe -l Ч ƒл€ выхода из системы; / Exit.
+    shutdown -h Ч ƒл€ перехода в режим гибернации. / Hybernation.
+    shutdown.exe -s -t 3600 Ч ƒл€ автоматически выключен через 1 час / Automatic shutdown before 1 hour.
+
+    shutdown -s -t 0 Ч ¬ыключение / Shutdown.
+    shutdown -r -t 0 Ч ѕерезагрузка / Restart.
+    shutdown -l Ч ¬ыход из системы / Exit.
+
+    rundll32.exe powrprof.dll, SetSuspendState 0,1,0 Ч √ибернаци€ / Hybernation.
+	(при условии, что она включена и поддерживаетс€ на устройстве / if supported).
