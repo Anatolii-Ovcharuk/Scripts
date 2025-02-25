@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00 
+
+; Change select colors for Windows. Made by Anatolii Ovcharuk. Version 1.0 for Windows - Update 22.02.2025 / MIT License
+; Profile on Github: https://github.com/Anatolii-Ovcharuk
+; This is a REG file script for Windows. Approximate completion time: 10 seconds.
+; Notice: Color values must be in RGB format.
+
+; HotTrackingColor — Oтвечает за цвет выделения значков при наведении на них (в формате R G B).
+; HotTrackingColor — Цвет выделения при наведении (например, при наведении на ссылку или активный элемент в списках).
+; Hilight — Цвет выделенного текста и его фона (например, при выделении файлов в проводнике).
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Hilight"="215 0 0"  ; Default value (For Windows 10): "0 120 215" | Other values: "255 0 0" - Red color
+"HilightText"="255 255 255"  ; Default value (For Windows 10): "255 255 255" | Other values: "205 205 205" - Grey color
+"HotTrackingColor"="204 0 0"  ; Default value (For Windows 10): "0 102 204" | Other values: "133 4 4" - Dark red color
